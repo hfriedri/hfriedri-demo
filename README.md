@@ -1,1 +1,1 @@
-# spring integration with jenkins
+# Demo Applikation als Spielwiese
