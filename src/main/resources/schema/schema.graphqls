@@ -1,0 +1,38 @@
+"""
+The PetStore GraphQL schema.
+"""
+schema {
+	query: Query
+}
+
+type Query {
+	"""
+	Get ping result
+	"""
+	ping: String!
+	
+	"""
+	Get pet
+	"""
+	pet(id: String!): Pet!
+	
+	"""
+	Get list of all pets
+	"""
+	pets: [Pet!]!
+}
+
+"""
+The Pet Object
+"""
+type Pet {
+	"""
+	ID
+	"""
+	id: String
+	
+	"""
+	Name
+	"""
+	name: String
+}

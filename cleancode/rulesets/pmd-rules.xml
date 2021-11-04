@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset xmlns="http://pmd.sourceforge.net/ruleset/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="All Java Rules" xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 https://pmd.sourceforge.io/ruleset_2_0_0.xsd">
+	<description>Used PMD rules in this project</description>
+	<!--    <rule ref="category/java/bestpractices.xml"/>-->
+	<rule ref="category/java/codestyle.xml"/>
+	<rule ref="category/java/documentation.xml"/>
+	<rule ref="category/java/errorprone.xml">
+		<exclude name="JUnitSpelling"/>
+	</rule>
+	<rule ref="category/java/multithreading.xml"/>
+	<rule ref="category/java/performance.xml"/>
+	<rule ref="category/java/security.xml"/>
+	<!--    <rule ref="category/pom/basic.xml"/>-->
+	<!--    <rule ref="category/vm/basic.xml"/>-->
+	<!--    <rule ref="category/xml/basic.xml"/>-->
+	<rule ref="category/java/design.xml">
+		<exclude name="LoosePackageCoupling"/>
+	</rule>
+	<rule ref="category/java/codestyle.xml/TooManyStaticImports">
+		<properties>
+			<property name="maximumStaticImports" value="20"/>
+		</properties>
+	</rule>
+	<rule ref="category/java/documentation.xml/CommentSize">
+		<properties>
+			<property name="maxLines" value="15"/>
+			<property name="maxLineLength" value="80"/>
+		</properties>
+	</rule>
+	<rule ref="category/java/codestyle.xml/LongVariable">
+		<properties>
+			<property name="minimum" value="40"/>
+		</properties>
+	</rule>
+	<rule ref="category/java/codestyle.xml/ShortVariable">
+		<properties>
+			<property name="minimum" value="2"/>
+		</properties>
+	</rule>
+</ruleset>

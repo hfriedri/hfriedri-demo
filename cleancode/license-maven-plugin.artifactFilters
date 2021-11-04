@@ -1,0 +1,49 @@
+# avoid:
+# Unable to retrieve license from URL
+# No license information available
+# No URL for license at index 0 in dependency
+exclude gaPattern com\.thoughtworks\.paranamer:paranamer
+exclude gaPattern commons-beanutils:commons-beanutils
+exclude gaPattern commons-chain:commons-chain
+exclude gaPattern commons-digester:commons-digester
+exclude gaPattern commons-logging:commons-logging
+exclude gaPattern commons-validator:commons-validator
+exclude gaPattern javax\.el:javax\.el-api
+exclude gaPattern javax\.measure:unit-api
+exclude gaPattern net\.iharder:base64
+exclude gaPattern org\.jboss:jboss-transaction-spi
+exclude gaPattern org\.glassfish.web:javax.el
+exclude gaPattern oro:oro
+exclude gaPattern tech\.units:indriya
+exclude gaPattern tech\.uom.lib:uom-lib-common
+exclude gaPattern xmlpull:xmlpull
+exclude gaPattern org.glassfish.jersey.core:jersey-client
+exclude gaPattern org.glassfish.jersey.ext:jersey-entity-filtering
+exclude gaPattern org.glassfish.jersey.media:jersey-media-multipart
+exclude gaPattern org.glassfish.jersey.connectors:jersey-apache-connector
+exclude gaPattern org.glassfish.jersey.inject:jersey-hk2
+exclude gaPattern dk.brics.automaton:automaton
+exclude gaPattern com.google.guava:guava-collections
+exclude gaPattern com.apollographql.federation:federation-graphql-java-support
+exclude gaPattern com.infradna.tool:bridge-method-annotation
+exclude gaPattern net.sf.jopt-simple:jopt-simple
+exclude gaPattern org.jeasy:easy-random-core
+exclude gaPattern org.slf4j:jul-to-slf4j
+exclude gaPattern org.slf4j:slf4j-api
+exclude gaPattern com.google.collect:com.springsource.com.google.common.collect
+exclude gaPattern com.google.common:google-collect
+exclude gaPattern javax.servlet:javax.servlet-api
+exclude gaPattern javax.ws.rs:javax.ws.rs-api
+exclude gaPattern com.joestelmach:natty
+exclude gaPattern org.mnode.ical4j:ical4j
+exclude gaPattern com.google.protobuf:protobuf-java
+exclude gaPattern org.hamcrest:hamcrest-core
+exclude gaPattern org.hamcrest:hamcrest
+exclude gaPattern org.hdrhistogram:HdrHistogram
+exclude gaPattern org.reflections:reflections
+exclude gaPattern org.javassist:javassist
+exclude gaPattern dom4j:dom4j
+exclude gaPattern com.github.vladimir-bukhtoyarov:bucket4j-core
+exclude gaPattern com.github.tomakehurst:wiremock
+exclude gaPattern com.hazelcast:hazelcast-kubernetes
+exclude gaPattern com.vaadin.external.google:android-json
