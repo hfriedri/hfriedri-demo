@@ -1,3 +1,13 @@
+<!--
+  #%L
+  Project: hfriedri-demo
+  File: logback.xml
+  %%
+  Copyright (C) 2021 Hfriedri
+  %%
+  Header of my_license
+  #L%
+  -->
 <configuration>
 
     <appender name="out" class="ch.qos.logback.core.ConsoleAppender">

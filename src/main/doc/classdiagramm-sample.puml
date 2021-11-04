@@ -1,3 +1,13 @@
+###
+# #%L
+# Project: hfriedri-demo
+# File: classdiagramm-sample.puml
+# %%
+# Copyright (C) 2021 Hfriedri
+# %%
+# Header of my_license
+# #L%
+###
 @startuml
 
 abstract class AbstractList
