@@ -1,0 +1,7 @@
+= Deployment diagram
+Hans Wurst <hans.wurst@gmx.net>
+v0.1, 02.12.2021
+:toc:
+:homepage: http://localhost:8787
+
+image::../pumlSvgs/classdiagramm-sample.svg[Class diagram, 1024,768]

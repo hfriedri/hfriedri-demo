@@ -223,6 +223,10 @@
 			<name>Internal Snapshot Release</name>
 			<url>http://localhost:8081/repository/HFRIEDRI-SNAPSHOTS/</url>
 		</snapshotRepository>
+		<site>
+			<id>MavenSite</id>
+			<url>dav:http://localhost:9090/${project.name}/${project.version}</url>
+		</site>
 	</distributionManagement>
 
 	<build>
@@ -473,6 +477,62 @@
 						</configuration>
 					</execution>
 				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-site-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>buildSite</id>
+						<phase>site</phase>
+						<goals>
+							<goal>site</goal>
+						</goals>
+						<configuration>
+							<generateReports>true</generateReports>
+							<generateSitemap>true</generateSitemap>
+							<relativizeDecorationLinks>false</relativizeDecorationLinks>
+							<locales>en</locales>
+							<inputEncoding>UTF-8</inputEncoding>
+							<outputEncoding>UTF-8</outputEncoding>
+							<asciidoc>
+								<attributes>
+									<icons>font</icons>
+									<source-highlighter>highlight.js</source-highlighter>
+									<coderay-css>style</coderay-css>
+									<toclevels>2</toclevels>
+								</attributes>
+							</asciidoc>
+						</configuration>
+					</execution>
+				</executions>
+				<dependencies>
+					<dependency>
+						<groupId>org.asciidoctor</groupId>
+						<artifactId>asciidoctor-maven-plugin</artifactId>
+						<version>${asciidoctor.maven.plugin.version}</version>
+					</dependency>
+					<dependency>
+						<groupId>org.jruby</groupId>
+						<artifactId>jruby-complete</artifactId>
+						<version>${jruby.version}</version>
+					</dependency>
+					<dependency>
+						<groupId>org.asciidoctor</groupId>
+						<artifactId>asciidoctorj</artifactId>
+						<version>${asciidoctorj.version}</version>
+					</dependency>
+					<dependency>
+						<groupId>org.apache.maven.doxia</groupId>
+						<artifactId>doxia-module-xhtml</artifactId>
+						<version>${doxia-module-xhtml.version}</version>
+					</dependency>
+					<dependency>
+						<groupId>org.apache.maven.wagon</groupId>
+						<artifactId>wagon-webdav</artifactId>
+						<version>${wagon-webdav.version}</version>
+					</dependency>
+				</dependencies>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>

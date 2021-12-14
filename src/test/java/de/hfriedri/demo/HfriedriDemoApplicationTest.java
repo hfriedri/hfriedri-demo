@@ -3,7 +3,7 @@ package de.hfriedri.demo;
 /*-
  * #%L
  * Project: hfriedri-demo
- * File: SpringJenkinsApplicationTests.java
+ * File: HfriedriDemoApplicationTest.java
  * %%
  * Copyright (C) 2021 Hfriedri
  * %%
